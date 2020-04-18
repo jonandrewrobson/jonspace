@@ -1,13 +1,17 @@
 $color-primary: #043798;
-$color-secondary: #6B97CF;
+$color-secondary: #639AD3;
+$color-tertiary: #D6E9FA;
+$color-accent-1: #E78944;
+$color-accent-2: #FFCC9A;
 $color-gray: #979797;
 $color-white: #FFFFFF;
 
 body {
 	font-family: 'Verdana', Helvetica, sans-serif;
+	font-size: 13px;
 }
 
-.container {
+.page-container {
 	max-width: 940px;
 	margin: 0 auto;
 }
@@ -42,46 +46,65 @@ header {
 	}
 }
 
-.content-container {
+.body-container {
 	display: flex;
+
+	.content-container {
+		border: 1px solid $color-gray;
+		margin-bottom: 30px;
+	}
+
+	.content-container-header {
+		background-color: #639AD3;
+		color: $color-white;
+		padding: 2px 0 2px 15px;
+		font-size: 13px;
+		font-weight: bold;
+	}
 
 	aside {
 		width: 40%;
+		padding-left: 15px 0 0 25px;
 
 		.intro {
+			padding-top: 15px;
 			height: 275px;
 			display: flex;
 
 			.image {
-				background-color: darkorchid;
 				width: 60%;
+				padding: 10px 0 0 25px;
+
+				h1 {
+					font-size: 20px;
+					letter-spacing: 4px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+
+				img {
+					margin-bottom: 20px;
+				}
+
+				a {
+					text-decoration: none;
+				}
 			}
 
 			.info {
-				background-color: deepskyblue;
 				width: 40%;
+				padding: 25px 0 0 15px;
 			}
 		}
 
 		.contact {
-			background-color: lightcyan;
-			padding: 10px 0 0;
+			padding: 10px 0 0 25px;
 			height: 275px;
 			width: 380px;
 
-			.contact-container {
+			.content-container {
 				width: 355px;
 				height: 180px;
-				border: 1px solid $color-gray;
-				margin-bottom: 30px;
-
-				.contact-container-header {
-					background-color: #639AD3;
-					color: $color-white;
-					padding: 2px 0 2px 15px;
-					font-size: 13px;
-					font-weight: bold;
-				}
 
 				.actions-list {
 					padding: 20px;
@@ -109,28 +132,87 @@ header {
 		}
 
 		.general-info {
-			background-color: lightskyblue;
+			padding: 10px 0 0 25px;
 			height: 375px;
 			width: 380px;
+
+			.content-container {
+				height: 350px;
+				width: 355px;
+
+				.detail-list {
+					padding: 20px;
+
+					.left {
+						background-color: $color-secondary;
+					}
+					.right {
+						background-color: $color-tertiary;
+					}
+				}
+			} 
 		}
 	}
 
 	.about {
-		background-color: lavenderblush;
 		width: 60%;
+		padding: 15px 0 0 40px;
 
 		.blog {
-			background-color: limegreen;
 			height: 400px;
+
+			a {
+				text-decoration: none;
+				color: $color-primary;
+				font-weight: bold;
+			}
+
+			h3 {
+				text-align: center;
+			}
+
+			.network {
+				height: 90px;
+				width: 520px;
+				border: 1px solid $color-gray;
+				margin-bottom: 20px;
+				font-size: 21px;
+			}
+
+			ul, li,  {
+				margin: 25px 0;
+			}
 		}
 		.blurbs {
-			background-color: honeydew;
 			height: 150px;
+
+			.content-container {
+				border: none;
+				margin: 0;
+
+				.content-container-header {
+					background-color: $color-accent-2;
+					color: $color-accent-1;
+					padding: 2px 0 2px 15px;
+					font-size: 13px;
+					font-weight: bold;
+				}
+			}
+
+			h3 {
+				color: $color-accent-1;
+				font-weight: bold;
+			}
+			
 		}
 		.comment {
-			background-color: darkorange;
 			height: 375px;
+			padding-top: 10px;
+			
+			.content-container {
+				width: 520px;
+				height: 350px;		
+			}
 		}
 	}
 }
-
