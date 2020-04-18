@@ -46,29 +46,68 @@ header {
 	display: flex;
 
 	aside {
-		background-color: peachpuff;
 		width: 40%;
 
 		.intro {
-			background-color: lightcoral;
 			height: 275px;
-			width: 380px;
 			display: flex;
 
 			.image {
 				background-color: darkorchid;
 				width: 60%;
 			}
+
 			.info {
 				background-color: deepskyblue;
 				width: 40%;
 			}
 		}
+
 		.contact {
 			background-color: lightcyan;
+			padding: 10px 0 0;
 			height: 275px;
 			width: 380px;
+
+			.contact-container {
+				width: 355px;
+				height: 180px;
+				border: 1px solid $color-gray;
+				margin-bottom: 30px;
+
+				.contact-container-header {
+					background-color: #639AD3;
+					color: $color-white;
+					padding: 2px 0 2px 15px;
+					font-size: 13px;
+					font-weight: bold;
+				}
+
+				.actions-list {
+					padding: 20px;
+					
+					ul {
+						display: flex;
+						flex-wrap: wrap;
+
+						li {
+							margin-bottom: 20px;
+
+							i {
+								margin-right: 15px;
+							}
+						}
+					}
+				}
+			}
+
+			.url-container {
+				width: 355px;
+				height: 40px;
+				border: 1px solid $color-gray;
+			}
 		}
+
 		.general-info {
 			background-color: lightskyblue;
 			height: 375px;

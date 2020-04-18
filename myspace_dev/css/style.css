@@ -56,14 +56,11 @@ header #secondary-nav ul li {
 }
 
 .content-container aside {
-  background-color: peachpuff;
   width: 40%;
 }
 
 .content-container aside .intro {
-  background-color: lightcoral;
   height: 275px;
-  width: 380px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,8 +78,50 @@ header #secondary-nav ul li {
 
 .content-container aside .contact {
   background-color: lightcyan;
+  padding: 10px 0 0;
   height: 275px;
   width: 380px;
+}
+
+.content-container aside .contact .contact-container {
+  width: 355px;
+  height: 180px;
+  border: 1px solid #979797;
+  margin-bottom: 30px;
+}
+
+.content-container aside .contact .contact-container .contact-container-header {
+  background-color: #639AD3;
+  color: #FFFFFF;
+  padding: 2px 0 2px 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.content-container aside .contact .contact-container .actions-list {
+  padding: 20px;
+}
+
+.content-container aside .contact .contact-container .actions-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.content-container aside .contact .contact-container .actions-list ul li {
+  margin-bottom: 20px;
+}
+
+.content-container aside .contact .contact-container .actions-list ul li i {
+  margin-right: 15px;
+}
+
+.content-container aside .contact .url-container {
+  width: 355px;
+  height: 40px;
+  border: 1px solid #979797;
 }
 
 .content-container aside .general-info {
