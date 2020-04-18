@@ -1,0 +1,113 @@
+body {
+  font-family: 'Verdana', Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+header {
+  color: #FFFFFF;
+}
+
+header #primary-nav {
+  color: #FFFFFF;
+  background-color: #043798;
+  border: 1px solid #979797;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #secondary-nav {
+  background-color: #6B97CF;
+  border: 1px solid #979797;
+  height: 30px;
+}
+
+header #secondary-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #secondary-nav ul li {
+  list-style-type: none;
+}
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-container aside {
+  background-color: peachpuff;
+  width: 40%;
+}
+
+.content-container aside .intro {
+  background-color: lightcoral;
+  height: 275px;
+  width: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content-container aside .intro .image {
+  background-color: darkorchid;
+  width: 60%;
+}
+
+.content-container aside .intro .info {
+  background-color: deepskyblue;
+  width: 40%;
+}
+
+.content-container aside .contact {
+  background-color: lightcyan;
+  height: 275px;
+  width: 380px;
+}
+
+.content-container aside .general-info {
+  background-color: lightskyblue;
+  height: 375px;
+  width: 380px;
+}
+
+.content-container .about {
+  background-color: lavenderblush;
+  width: 60%;
+}
+
+.content-container .about .blog {
+  background-color: limegreen;
+  height: 400px;
+}
+
+.content-container .about .blurbs {
+  background-color: honeydew;
+  height: 150px;
+}
+
+.content-container .about .comment {
+  background-color: darkorange;
+  height: 375px;
+}
+/*# sourceMappingURL=style.css.map */

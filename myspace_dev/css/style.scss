@@ -1,0 +1,97 @@
+$color-primary: #043798;
+$color-secondary: #6B97CF;
+$color-gray: #979797;
+$color-white: #FFFFFF;
+
+body {
+	font-family: 'Verdana', Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+header {
+	color: $color-white;
+
+	#primary-nav {
+			color: $color-white;
+			background-color: $color-primary;
+			border: 1px solid $color-gray;
+			height: 40px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+	}
+
+	#secondary-nav {
+			background-color: $color-secondary;
+			border: 1px solid $color-gray;
+			height: 30px;
+			
+			ul {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				
+				li {
+					list-style-type: none;
+				}
+			}
+	}
+}
+
+.content-container {
+	display: flex;
+
+	aside {
+		background-color: peachpuff;
+		width: 40%;
+
+		.intro {
+			background-color: lightcoral;
+			height: 275px;
+			width: 380px;
+			display: flex;
+
+			.image {
+				background-color: darkorchid;
+				width: 60%;
+			}
+			.info {
+				background-color: deepskyblue;
+				width: 40%;
+			}
+		}
+		.contact {
+			background-color: lightcyan;
+			height: 275px;
+			width: 380px;
+		}
+		.general-info {
+			background-color: lightskyblue;
+			height: 375px;
+			width: 380px;
+		}
+	}
+
+	.about {
+		background-color: lavenderblush;
+		width: 60%;
+
+		.blog {
+			background-color: limegreen;
+			height: 400px;
+		}
+		.blurbs {
+			background-color: honeydew;
+			height: 150px;
+		}
+		.comment {
+			background-color: darkorange;
+			height: 375px;
+		}
+	}
+}
+
